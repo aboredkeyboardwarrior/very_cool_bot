@@ -7,3 +7,4 @@ pip install praw
 ```
 2) download all files into a single directory
 3) edit praw.ini details under tyvc_bot to include api and account details
+4) schedule the script to execute every minute
