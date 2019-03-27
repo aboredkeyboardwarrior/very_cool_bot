@@ -15,7 +15,7 @@ else:
 for submission in subreddit.hot(limit=10):
   for comment in submission.comments:
     if re.search("!cool", comment.body, re.IGNORECASE):
-      comment.reply("Thank you %s, very cool!" % (submission.author.name))
+      comment.reply("Thank you /u/%s, very cool!" % (submission.author.name))
       print("Bot replying to : ", comment.body)
       comments_replied_to.append(comment.id)
 
